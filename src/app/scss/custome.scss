@@ -1,0 +1,56 @@
+/* Typography */
+body,
+ul,
+li,
+p,
+a,
+label,
+input,
+div {
+    font-family: $mainFont;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.h1 {
+    font-family: $mainFont;
+    font-size: 48px;
+    font-weight: 200;
+}
+
+.h2 {
+    font-family: $mainFont;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.h3 {
+    font-family: $mainFont;
+    font-size: 22px;
+}
+
+/* General */
+ul, li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.menu_bar{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;  
+    li{
+        margin: 10px;
+        a{
+            color: #000;
+            font-size: 0.9rem;
+
+            &:hover{
+                color: #5a5959;
+            }
+        }
+    }
+}
