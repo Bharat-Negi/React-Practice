@@ -47,10 +47,38 @@ a{
         a{
             color: #000;
             font-size: 0.9rem;
+            font-weight: 500;
 
             &:hover{
                 color: #5a5959;
+                text-decoration: underline;
             }
         }
+    }
+}
+.backtohome{
+    position: absolute;
+    top : 10px;
+    left: 10px;
+    font-size: 0.9rem;
+    color: #000;
+    font-weight: 500;
+    &:hover{
+        color: #5a5959;
+    }
+}
+.timefull-wrap{
+    width: 100%;
+    height: 100vh;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1{
+        font-size: 2rem;
+        background-color: #fff;
+        padding: 10px 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 2px rgba(0,0,0,0.2);
     }
 }

@@ -6,47 +6,8 @@ function MenuSection(){
         <div className="container">
             <ul className="menu_bar">
                 <li>
-                    <Link to="/">Home</Link>
-                </li>
-                <li>
-                    <a href="#">Menu Section</a>
-                </li>
-                <li>
-                    <a href="#">Menu Section</a>
-                </li>
-                <li>
-                    <a href="#">Menu Section</a>
-                </li>
-                <li>
-                    <a href="#">Menu Section</a>
-                </li>
-                <li>
-                    <a href="#">Menu Section</a>
-                </li>
-                <li>
-                    <a href="#">Menu Section</a>
-                </li>
-                <li>
-                    <a href="#">Menu Section</a>
-                </li>
-                <li>
-                    <a href="#">Menu Section</a>
-                </li>
-                <li>
-                    <a href="#">Menu Section</a>
-                </li>
-                <li>
-                    <a href="#">Menu Section</a>
-                </li>
-                <li>
-                    <a href="#">Menu Section</a>
-                </li>
-                <li>
-                    <a href="#">Menu Section</a>
-                </li>
-                <li>
-                    <a href="#">Menu Section</a>
-                </li>
+                    <Link to="/time-MAN">Time MAN</Link>
+                </li>                
             </ul>
         </div>            
         </>
