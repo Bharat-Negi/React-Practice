@@ -93,7 +93,7 @@ function GridSlider() {
 
             <div className="listSliderWrap">
                 <div class="wrapper">
-                    <i id="left" class="fa-solid fa-angle-left"></i>
+                    <i id="left" class='bx bx-chevron-left'></i>
                     <ul class="carousel">
                         <li class="card">
                             <div class="img"><img src={require('../images/img-1.jpg')} alt="img" draggable="false" /></div>
@@ -126,7 +126,7 @@ function GridSlider() {
                             <span>App Designer</span>
                         </li>
                     </ul>
-                    <i id="right" class="fa-solid fa-angle-right"></i>
+                    <i id="right" class='bx bx-chevron-right'></i>
                 </div>
             </div>
         </>
