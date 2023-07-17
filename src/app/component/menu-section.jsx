@@ -7,7 +7,13 @@ function MenuSection(){
             <ul className="menu_bar">
                 <li>
                     <Link to="/time-MAN">Time MAN</Link>
-                </li>                
+                </li>
+                <li>
+                    <Link to="/math">Math Page</Link>
+                </li>
+                <li>
+                    <Link to="/cardPage">Card Page</Link>
+                </li>                 
             </ul>
         </div>            
         </>

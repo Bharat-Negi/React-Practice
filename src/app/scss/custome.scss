@@ -82,3 +82,19 @@ a{
         box-shadow: 0 2px 2px rgba(0,0,0,0.2);
     }
 }
+
+.mathCss{
+    font-size: 1rem;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    li{
+        font-weight: 500;
+    }    
+}
+.cardHeading{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 20px 0;
+}
