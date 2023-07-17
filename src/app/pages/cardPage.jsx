@@ -2,20 +2,20 @@ import { Link } from 'react-router-dom'
 import CardDataPage from '../controller/card-data-page'
 import Cdata from '../data-file/Cdata'
 
-function ncard(val){
-    console.log(val);
+// function ncard(val){
+//     console.log(val);
 
-    return(
-        <CardDataPage
-            cimage={val.cimage}
-            cname={val.cname}
-            cprotext={val.cprotext}
-            cproductlink={val.cproductlink}
-            clink={val.clink}
-            canother={val.canother}
-        />
-    )
-}
+//     return(
+//         <CardDataPage
+//             cimage={val.cimage}
+//             cname={val.cname}
+//             cprotext={val.cprotext}
+//             cproductlink={val.cproductlink}
+//             clink={val.clink}
+//             canother={val.canother}
+//         />
+//     )
+// }
 
 function CardPage() {
     return (
@@ -28,7 +28,22 @@ function CardPage() {
 
             <div className="container">
                 <div className="row">
-                    {Cdata.map(ncard)}
+                    {/* {Cdata.map(ncard)} */}
+                    
+                    {/* fat arrow function */}
+                    {Cdata.map((val, index) => {
+                        console.log(index);
+                        return(
+                            <CardDataPage
+                                cimage={val.cimage}
+                                cname={val.cname}
+                                cprotext={val.cprotext}
+                                cproductlink={val.cproductlink}
+                                clink={val.clink}
+                                canother={val.canother}
+                            />
+                        );
+                    })}
                 </div>
             </div>    
         </>

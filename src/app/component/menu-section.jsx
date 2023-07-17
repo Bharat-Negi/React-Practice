@@ -13,7 +13,10 @@ function MenuSection(){
                 </li>
                 <li>
                     <Link to="/cardPage">Card Page</Link>
-                </li>                 
+                </li>
+                <li>
+                    <Link to="/gridSlider">Grid Slider</Link>
+                </li>                
             </ul>
         </div>            
         </>
