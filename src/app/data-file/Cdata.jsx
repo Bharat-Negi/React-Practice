@@ -2,7 +2,8 @@
 
 const Cdata = [
     {
-        cimage : '/images/product-2.jpg',
+        id : '1',
+        cimage : 'images/product-2.jpg',
         cname : 'Product One',
         cprotext : 'Some quick example product one',
         cproductlink : 'product one item',
@@ -10,7 +11,8 @@ const Cdata = [
         canother : 'https://www.facebook.com/'
     },
     {
-        cimage : '../images/product-2.jpg',
+        id : '2',
+        cimage : 'images/product-3.jpg',
         cname : 'Product Two',
         cprotext : 'Some quick example product two',
         cproductlink : 'product two item',
@@ -18,7 +20,8 @@ const Cdata = [
         canother : 'https://www.facebook.com/'
     },
     {
-        cimage : '../images/product-3.jpg',
+        id : '3',
+        cimage : 'images/product-4.jpg',
         cname : 'Product Three',
         cprotext : 'Some quick example product three',
         cproductlink : 'product three item',
@@ -26,7 +29,8 @@ const Cdata = [
         canother : 'https://www.facebook.com/'
     },
     {
-        cimage : '../images/product-4.jpg',
+        id : '4',
+        cimage : 'images/product-5.jpg',
         cname : 'Product Four',
         cprotext : 'Some quick example product four',
         cproductlink : 'product four item',

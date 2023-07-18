@@ -5,6 +5,7 @@ import TimeMAN from './app/pages/time-MAN';
 import MathPage from './app/pages/math';
 import CardPage from './app/pages/cardPage';
 import GridSlider from './app/pages/gridSlider';
+import WeatherApp from './app/pages/weatherApp';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route exact path="/math" element={<MathPage />} />
         <Route exact path="/cardPage" element={<CardPage />} />
         <Route exact path="/gridSlider" element={<GridSlider />} />
+        <Route exact path="/weatherApp" element={<WeatherApp />} />
       </Routes>
     </BrowserRouter>
   );

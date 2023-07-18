@@ -31,10 +31,11 @@ function CardPage() {
                     {/* {Cdata.map(ncard)} */}
                     
                     {/* fat arrow function */}
-                    {Cdata.map((val, index) => {
+                    {Cdata.map((val, index, arr) => {
                         console.log(index);
                         return(
                             <CardDataPage
+                                key={val.id}
                                 cimage={val.cimage}
                                 cname={val.cname}
                                 cprotext={val.cprotext}
