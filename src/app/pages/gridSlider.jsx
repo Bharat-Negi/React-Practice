@@ -92,41 +92,41 @@ function GridSlider() {
             <Link to="/" className="backtohome">Back to home page</Link>
 
             <div className="listSliderWrap">
-                <div class="wrapper">
-                    <i id="left" class='bx bx-chevron-left'></i>
-                    <ul class="carousel">
-                        <li class="card">
-                            <div class="img"><img src='../images/img-1.jpg' alt="img" draggable="false" /></div>
+                <div className="wrapper">
+                    <i id="left" className='bx bx-chevron-left'></i>
+                    <ul className="carousel">
+                        <li className="card">
+                            <div className="img"><img src='../images/img-1.jpg' alt="img" draggable="false" /></div>
                             <h2>Blanche Pearson</h2>
                             <span>Sales Manager</span>
                         </li>
-                        <li class="card">
-                            <div class="img"><img src='../images/img-2.jpg' alt="img" draggable="false" /></div>
+                        <li className="card">
+                            <div className="img"><img src='../images/img-2.jpg' alt="img" draggable="false" /></div>
                             <h2>Joenas Brauers</h2>
                             <span>Web Developer</span>
                         </li>
-                        <li class="card">
-                            <div class="img"><img src='../images/img-3.jpg' alt="img" draggable="false" /></div>
+                        <li className="card">
+                            <div className="img"><img src='../images/img-3.jpg' alt="img" draggable="false" /></div>
                             <h2>Lariach French</h2>
                             <span>Online Teacher</span>
                         </li>
-                        <li class="card">
-                            <div class="img"><img src='../images/img-4.jpg' alt="img" draggable="false" /></div>
+                        <li className="card">
+                            <div className="img"><img src='../images/img-4.jpg' alt="img" draggable="false" /></div>
                             <h2>James Khosravi</h2>
                             <span>Freelancer</span>
                         </li>
-                        <li class="card">
-                            <div class="img"><img src='../images/img-5.jpg' alt="img" draggable="false" /></div>
+                        <li className="card">
+                            <div className="img"><img src='../images/img-5.jpg' alt="img" draggable="false" /></div>
                             <h2>Kristina Zasiadko</h2>
                             <span>Bank Manager</span>
                         </li>
-                        <li class="card">
-                            <div class="img"><img src='../images/img-6.jpg' alt="img" draggable="false" /></div>
+                        <li className="card">
+                            <div className="img"><img src='../images/img-6.jpg' alt="img" draggable="false" /></div>
                             <h2>Donald Horton</h2>
                             <span>App Designer</span>
                         </li>
                     </ul>
-                    <i id="right" class='bx bx-chevron-right'></i>
+                    <i id="right" className='bx bx-chevron-right'></i>
                 </div>
             </div>
         </>
