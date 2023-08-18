@@ -18,7 +18,7 @@ function MenuSection(){
                     <Link to="/gridSlider">Grid Slider</Link>
                 </li>
                 <li>
-                    <Link to="/weatherApp">Weather App</Link>
+                    <Link to="/AddEditDelete">Add Edit Delete</Link>
                 </li>               
             </ul>
         </div>            
