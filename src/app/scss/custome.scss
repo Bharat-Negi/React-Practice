@@ -226,6 +226,7 @@ a {
     i{
         margin: 0 5px;
         font-size: 1.2rem;
+        cursor: pointer;
     }
 }
 .modal-content{
@@ -239,6 +240,7 @@ a {
     line-height: normal;
     border-radius: 5px;
     font-weight: 400;
+    text-transform: capitalize;
 }
 .live{
     background-color: green;
@@ -248,4 +250,9 @@ a {
 }
 .error{
     background-color: red;
+}
+.alert{
+    padding: 5px;
+    font-size: 0.8rem;
+    font-weight: 500;
 }
