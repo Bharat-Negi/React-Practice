@@ -19,7 +19,13 @@ function MenuSection(){
                 </li>
                 <li>
                     <Link to="/AddEditDelete">Add Edit Delete</Link>
-                </li>               
+                </li>
+                <li>
+                    <Link to="/TabSection">Tab Section</Link>
+                </li> 
+                <li>
+                    <Link to="/CascadingDropdown">Cascading Dropdown</Link>
+                </li>         
             </ul>
         </div>            
         </>
