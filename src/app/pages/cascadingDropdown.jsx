@@ -48,7 +48,6 @@ export default function SelectDropdown() {
                     <Col>
                         <FloatingLabel controlId="floatingSelect" label="Language">
                             <Form.Select aria-label="Floating label select example">
-                                <option>Select</option>
                                 {
                                     state.map((langu, index)=> (
                                       <option key={index}>{langu.name}</option>  
@@ -60,7 +59,6 @@ export default function SelectDropdown() {
                     <Col>
                         <FloatingLabel controlId="floatingSelect" label="Currency">
                             <Form.Select aria-label="Floating label select example">
-                                <option>Select</option>
                                 {
                                     curren.map((curr, index)=> (
                                       <option key={index}>{curr.name}</option>  

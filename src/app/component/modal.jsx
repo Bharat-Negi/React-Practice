@@ -42,8 +42,7 @@ export const ModalWrap = ({ closeModal, onSubmit, defaultValue }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
-        if(!validateFrom()) return;
+        if(!validateFrom()) return;        
 
         // console.log(fromState);
         onSubmit(fromState);
