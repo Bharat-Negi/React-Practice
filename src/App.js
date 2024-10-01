@@ -9,6 +9,7 @@ import AddEditDelete from './app/pages/addEditDelete';
 import TabSection from './app/pages/tab-section';
 import CascadingDropdown from './app/pages/cascadingDropdown';
 import PropsUse from './app/component/props/propsUse';
+import TextForm from "./app/component/StateAndEvents/TextForm";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route exact path="/TabSection" element={<TabSection />} />
         <Route exact path="/CascadingDropdown" element={<CascadingDropdown />} />
         <Route exact path="/PropsUse" element={<PropsUse />} />
+        <Route exact path="/TextForm" element={<TextForm />} />
       </Routes>
     </BrowserRouter>
   );

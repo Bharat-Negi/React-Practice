@@ -27,8 +27,11 @@ function MenuSection(){
                     <Link to="/CascadingDropdown">Cascading Dropdown</Link>
                 </li>
                 <li>
-                    <Link to="/propsUse">props use</Link>
-                </li>      
+                    <Link to="/propsUse">Props Use</Link>
+                </li>
+                <li>
+                    <Link to="/TextForm">State and Events</Link>
+                </li>       
             </ul>
         </div>            
         </>

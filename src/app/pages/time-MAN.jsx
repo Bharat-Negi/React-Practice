@@ -17,12 +17,23 @@ if(curDate >= 1 && curDate < 12){
     cssStyle.color = 'black';
 }
 
+
+const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const currentDate = new Date();
+const day = currentDate.getDate();
+// const month = currentDate.getMonth() + 1;
+const year = currentDate.getFullYear();
+
+const newName = monthNames[currentDate.getMonth()] + " " + day + ", " + year;
+console.log(newName);
+
 function TimeMAN() {
     return(
         <>
             <Link to="/" className="backtohome">Back to home page</Link>
             <div className="timefull-wrap">
                 <h1>Hello Sir, <span style={cssStyle}>{greeting}</span></h1>
+                <div className="footdate">{newName}</div>
             </div>
         </>
     )
