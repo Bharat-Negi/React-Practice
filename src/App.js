@@ -8,6 +8,8 @@ import GridSlider from './app/pages/gridSlider';
 import AddEditDelete from './app/pages/addEditDelete';
 import TabSection from './app/pages/tab-section';
 import CascadingDropdown from './app/pages/cascadingDropdown';
+import PropsUse from './app/component/props/propsUse';
+
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
         <Route exact path="/AddEditDelete" element={<AddEditDelete />} />
         <Route exact path="/TabSection" element={<TabSection />} />
         <Route exact path="/CascadingDropdown" element={<CascadingDropdown />} />
+        <Route exact path="/PropsUse" element={<PropsUse />} />
       </Routes>
     </BrowserRouter>
   );
