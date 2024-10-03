@@ -259,6 +259,16 @@ a {
     font-weight: 500;
 }
 
+.bootAlert{
+    transform: translate(-50%, 10px);
+    min-width: 500px;
+
+    .alert{
+        padding: 5px 15px;
+        margin-bottom: 0;
+    }
+}
+
 .tabSectionclass{
     .tab-content{
         padding: 20px;

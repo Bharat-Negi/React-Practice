@@ -23,15 +23,37 @@ const TextFormUse = (props) => {
         setText(event.target.value)
     }
 
+    const handleCopyClick = () => {
+        let text = document.getElementById("myBox");
+        text.select();
+        navigator.clipboard.writeText(text.value);
+    }
+
+    const handleExtraSpaceClick = () => {
+        let newText = text.split(/[ ]+/);
+        setText(newText.join(" "));
+    }
+
     const wordMin = 0.008 * text.split(" ").length;
 
   return (
     <>
+        <div class="position-absolute top-0 start-50 bootAlert">
+        <div class="alert alert-primary" role="alert">
+            A simple primary alert—check it out!
+        </div>
+        </div>
         <div className='mt-5 container'>
-            <h4>{props.heading}</h4>
+            <h4 className='d-flex justify-content-between'>
+                {props.heading}
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" />
+                    <label class="form-check-label">Dark Mode</label>
+                </div>
+            </h4>
             <div className="form-group mb-3">
                 <label className='mb-2'>{props.labelName}</label>
-                <textarea className="form-control" value={text} onChange={handleOnChange} rows="6"></textarea>
+                <textarea className="form-control" id="myBox" value={text} onChange={handleOnChange} rows="6"></textarea>
             </div>
             <div className='d-flex gap-2'>
                 <button type="button" class="btn btn-primary" onClick={handleUpClick}>
@@ -42,6 +64,12 @@ const TextFormUse = (props) => {
                 </button>
                 <button type="button" class="btn btn-danger" onClick={handleClearClick}>
                     Clear Text
+                </button>
+                <button type="button" class="btn btn-secondary" onClick={handleCopyClick}>
+                    Copy Text
+                </button>
+                <button type="button" class="btn btn-info" onClick={handleExtraSpaceClick}>
+                    Remove Extra Space
                 </button>
             </div>            
         </div>
