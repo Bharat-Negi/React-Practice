@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import DarkToggle from './darkToggle'
 import AlertFile from './alertFile'
 
 const TextFormUse = (props) => {
@@ -28,6 +27,7 @@ const TextFormUse = (props) => {
     const handleCopyClick = () => {
         let text = document.getElementById("myBox");
         text.select();
+        document.getSelection().removeAllRanges();
         navigator.clipboard.writeText(text.value);
     }
 
@@ -53,7 +53,10 @@ const TextFormUse = (props) => {
         <div className={`mt-5 container py-3 mode-${mode}`}>
             <h4 className='d-flex justify-content-between'>
                 {props.heading}
-                <DarkToggle toggleMode={toggleMode} />        
+                <div className="form-check form-switch">
+                    <input className="form-check-input" onClick={toggleMode} type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                    <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Dark Mode</label>
+                </div>      
             </h4>
             <div className="form-group mb-3">
                 <label className='mb-2'>{props.labelName}</label>
@@ -79,7 +82,7 @@ const TextFormUse = (props) => {
 
             <div className='col-md-12 mt-3'>
                 <h4>Heading</h4>
-                <p>{text.split(" ").filter((element)=> {return element.length!==0}).length} Words, {text.length} characters</p>
+                <p>{text.split(/\s+/).filter((element)=> {return element.length!==0}).length} Words, {text.length} characters</p>
                 <p>{wordMin.toFixed(3)} Minutes Read</p>
                 <h5>Preview</h5>
                 <p>{text.length > 0 ? text:"Nothing to preview"}</p>
