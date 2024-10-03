@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import DarkToggle from './darkToggle'
+import AlertFile from './alertFile'
 
 const TextFormUse = (props) => {
 
@@ -34,52 +36,56 @@ const TextFormUse = (props) => {
         setText(newText.join(" "));
     }
 
-    const wordMin = 0.008 * text.split(" ").length;
+    const wordMin = 0.008 * text.split(" ").filter((element)=> {return element.length!==0}).length;
+
+    const [mode, setMode] = useState('light');
+    const toggleMode = () => {
+        if(mode === 'light'){
+            setMode('dark');
+        } else {
+            setMode('light');
+        }
+    }
 
   return (
-    <>
-        <div class="position-absolute top-0 start-50 bootAlert">
-        <div class="alert alert-primary" role="alert">
-            A simple primary alert—check it out!
-        </div>
-        </div>
-        <div className='mt-5 container'>
+    <>      
+        <AlertFile />
+        <div className={`mt-5 container py-3 mode-${mode}`}>
             <h4 className='d-flex justify-content-between'>
                 {props.heading}
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" role="switch" />
-                    <label class="form-check-label">Dark Mode</label>
-                </div>
+                <DarkToggle toggleMode={toggleMode} />        
             </h4>
             <div className="form-group mb-3">
                 <label className='mb-2'>{props.labelName}</label>
                 <textarea className="form-control" id="myBox" value={text} onChange={handleOnChange} rows="6"></textarea>
             </div>
             <div className='d-flex gap-2'>
-                <button type="button" class="btn btn-primary" onClick={handleUpClick}>
+                <button disabled={text.length===0} type="button" className="btn btn-primary" onClick={handleUpClick}>
                     Convert to Uppercase
                 </button>
-                <button type="button" class="btn btn-success" onClick={handleLowClick}>
+                <button disabled={text.length===0} type="button" className="btn btn-success" onClick={handleLowClick}>
                     Convert to Lowercase
                 </button>
-                <button type="button" class="btn btn-danger" onClick={handleClearClick}>
+                <button disabled={text.length===0} type="button" className="btn btn-danger" onClick={handleClearClick}>
                     Clear Text
                 </button>
-                <button type="button" class="btn btn-secondary" onClick={handleCopyClick}>
+                <button disabled={text.length===0} type="button" className="btn btn-secondary" onClick={handleCopyClick}>
                     Copy Text
                 </button>
-                <button type="button" class="btn btn-info" onClick={handleExtraSpaceClick}>
+                <button disabled={text.length===0} type="button" className="btn btn-info" onClick={handleExtraSpaceClick}>
                     Remove Extra Space
                 </button>
-            </div>            
+            </div>
+
+            <div className='col-md-12 mt-3'>
+                <h4>Heading</h4>
+                <p>{text.split(" ").filter((element)=> {return element.length!==0}).length} Words, {text.length} characters</p>
+                <p>{wordMin.toFixed(3)} Minutes Read</p>
+                <h5>Preview</h5>
+                <p>{text.length > 0 ? text:"Nothing to preview"}</p>
+            </div>           
         </div>
-        <div className='mt-3 container'>
-            <h4>Heading</h4>
-            <p>{text.split(" ").length} Words, {text.length} characters</p>
-            <p>{wordMin.toFixed(3)} Minutes Read</p>
-            <h5>Preview</h5>
-            <p>{text}</p>
-        </div>
+        
     </>
   )
 }
